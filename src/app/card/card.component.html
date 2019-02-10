@@ -1,0 +1,14 @@
+<!--<p>{{card.firstName}} {{card.lastName}}</p>-->
+<!--<p>{{card.name}}</p>-->
+
+<div class ="d-flex flex-row mt-3">
+  <p class="p-3 align-self-center box">{{card.votes}} </p>
+  <div class="media">
+    <div class="media-body">
+      <h5 class="mt-5">{{card.name}}</h5>
+      <a href="#" (click) = "addclick()"><i class="fas fa-arrow-up"></i>upvotes</a>
+      &nbsp;&nbsp;&nbsp;
+      <a href="#" (click) = "delclick()"><i class="fas fa-arrow-down"></i>downvotes</a>
+    </div>
+  </div>
+</div>

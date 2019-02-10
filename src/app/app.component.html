@@ -1,4 +1,5 @@
 <div class="container">
+  <app-card *ngFor = "let cardx of sortd" [card]="cardx" ></app-card>
     <form>
       <div class="form-group">
         <label>First Name</label>
@@ -8,8 +9,11 @@
         <label>Last Name</label>
         <input type="text" class="form-control" #lastName>
       </div>
-      <button type="button" class="btn btn-primary">Submit</button>
+      <button type="button" class="btn btn-primary" (click)="onclick(firstName,lastName)">Submit</button>
     </form>
-    
+
+    <ol>
+     <!-- <li *ngFor="let card of cards">{{card.firstName}} {{card.lastName}}</li> -->
+    </ol>
   </div>
   
